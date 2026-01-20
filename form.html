@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .item1{width: 100px;height: 100px;background-color: aquamarine;justify-content: space-between;align-items:flex-end;vertical-align: middle;}
+
+.table{border: 3px solid #0072E3;width: 1000px;border-collapse: collapse;
+}
+td,th{border: 2px solid  #0072E3}
+th{background-color: antiquewhite;} */
+.fieldset{border: 2px solid black;border-radius: 10px;}
+
+
+.q1{width: 500px;border-bottom: 2px dashed gray; margin-bottom: 20px;padding: 10px;}
+.t1{float: left;width: 100px;text-align: right;}
+.legend{padding: 5;}
+body{background-color:pink ;background-image: url(./images/Charizard.jpg);background-repeat: no-repeat;background-size: 300px;}
+    </style>
+</head>
+<body>
+    <form action="#" method="get" enctype="multipart/form-data">
+        <fieldset  class="fieldset">
+            <legend>基本資料</legend>
+            <div class="q1">
+    <label for="myname" class="t1">姓名:</label>
+    <input type="text" id="myname" name="name" value="請填名字">
+</div>
+<div class="q1">
+    <label for="mypassword" class="t1">密碼:</label>
+    <input type="password" id="mypassword" name="password" maxlength="6" placeholder="請輸入密碼">
+</div>
+        </fieldset>
+
+        <fieldset  class="fieldset">
+            <legend>詳細資料</legend>
+<div class="q1">
+    <label for="memo" class="t1">備忘錄:</label>
+    <textarea name="usermemo" id="memo" cols="20" rows="10">輸入文字</textarea>
+</div>
+    <input type="submit" value="提交檔案">
+    <input type="reset" value="重新輸入">
+    <input type="button" name="" id="" value="一般按鈕">
+    <!-- <button type="button">一般按鈕</button> -->
+<div class="q1">
+    <span class="t1">性別:</span>
+    <label><input type="radio" name="sex" value="usergender">女</label>
+    <label><input type="radio" name="sex" value="usergender">男</label>
+<div class="q1">
+    <label><input type="checkbox" name="hobby" value="userhobby">游泳</label>
+    <label><input type="checkbox" name="hobby" value="userhobby">跑步</label>
+    <label><input type="checkbox" name="hobby" value="userhobby">棒球</label>
+</div>
+        </fieldset>
+
+        <fieldset>
+            <legend>其他</legend>
+
+<div class="q1">
+    <label class="t1" for="1">縣市:</label>
+    <select name="city" id="1">
+        <option value="default" hidden>請選擇</option>
+        <option value="Taipei">選項1</option>
+        <option value="Tainan">選項2</option>
+        <option value="Kaohsiung">選項3</option>
+    </select>
+</div>
+<div class="q1">
+    <label for="userfile">檔案上傳</label>
+    <input type="file" name="file1" id="userfile">
+
+</div>
+        </fieldset>
+<div class="q1">
+    
+        <legend>
+            <label for="date1">date:</label>
+            <input type="date" id="date1" name="userdate1" value="2026-01-01" min="2026-01-01" max="2026-01-25">
+            <br>
+            <label for="date2">datetimelocal:</label>
+            <input type="datetime-local" id="date2" name="userdatetimelocal" value="2026-01-01T12:20" min="2026-01-01" max="2026-01-25">
+            <br>
+            <label for="month">month:</label>
+            <input type="month" id="month" name="usermonth" value="2026-01-01T12:20" min="2026-01-01" max="2026-01-25">
+
+
+        </legend>
+    <label for="email">郵件:</label>
+    <input type="email" id="email" name="email">
+    <br>
+    <label for="tel">電話:</label>
+    <input type="tel" id="tel" name="tel" value="09" placeholder="請輸入電話號碼" pattern="^[0][9]\d{8}$">
+    <br>
+    <label for="url">網址:</label>
+    <input type="url" id="url" name="url" value="https://" >
+    <br>
+    <label for="search">搜尋:</label>
+    <input type="search" id="search" name="search" >
+</div>
+<div>
+    <input type="submit" value="送出">
+</div>
+<div class="q1">
+    <label for="color">調色盤</label>
+    <input type="color" id="color" name="usercolor" value="#f3afaf">
+    <br>
+    <label for="range">音量</label>
+    <input type="range" id="range" name="userrange" value="30" step="10">
+    <br>
+    <label for="number">數值</label>
+    <input type="number" id="number" name="usenumber" value="1" step="2" min="0" max="10">
+
+</div>
+<div>
+    <input type="submit" value="送出">
+</div>
+
+</form>
+</body>
+</html>

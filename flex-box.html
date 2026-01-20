@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{border: 2px solid salmon;display:flex;flex-direction: row;justify-content: space-around;width: 300px;height: 150px;align-items: center;}
+        .item{
+            width: 50px;
+            /* height: 50px; */
+            border: 1px solid skyblue;
+            background-color: lightblue;
+            font-size: 20px;
+            padding: 5px;
+        }
+        .flex{display:flex;}
+        .inline-flex{display:inline-flex;}
+
+        .row{flex-direction: row;}
+        .row-reverse{flex-direction: row-reverse;}
+        .column{flex-direction: column;}
+        .column-reverse{flex-direction: column-reverse;}
+
+        .flex-start{justify-content: flex-start;}
+        .center{justify-content: center;}
+        .flex-end{justify-content: flex-end;}
+        .space-around{justify-content: space-around;}
+        .space-between{justify-content: space-between;}
+
+        .nowrap{flex-wrap: nowrap;}
+        .wrap{flex-wrap: wrap;}
+        .wrap-reverse{flex-wrap: wrap-reverse}
+        h2{background-color: orange;display: inline;}
+        .display{display: none;}
+
+
+    </style>
+</head>
+<body>
+<div class="box flex">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+</div>
+<div class="box inline-flex">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+</div>
+
+</div>
+<div class="box row">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+</div>
+
+</div>
+<div class="box row-reverse">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+</div>
+
+<div class="box column">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+</div>
+
+<div class="box column-reverse">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+</div>
+<hr style="margin: 50px;">
+<!-- <hr> -->
+<div class="box flex-start">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+</div>
+
+<div class="box center">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+</div>
+
+<div class="box flex-end">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+</div>
+
+<div class="box space-around">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+</div>
+
+<div class="box space-between">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+</div>
+<hr style="margin: 50px;">
+<div class="box wrap-reverse">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+    <div class="item">item4</div>
+    <div class="item">item5</div>
+    <div class="item">item6</div>
+    <div class="item">item7</div>
+    <div class="item">item8</div>
+    <div class="item">item9</div>
+</div>
+
+<hr style="margin: 50px;">
+
+<div class="box">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+</div>
+<h1>01</h1>
+<h2>02</h2>
+<h3>03</h3>
+<span>1</span>
+<span class="display">2</span>
+<span>3</span>
+
+</body>
+</html>

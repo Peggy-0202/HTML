@@ -1,0 +1,36 @@
+<style>
+        @font-face {
+    font-family:"ChenYuluoyan";
+    src: url(./fonts/ChenYuluoyan-2.0-Thin.ttf);
+}
+.fruit2{color: blueviolet;font-size: 30px;}
+p.fruit1{color: aqua;font-size: 24px;}
+h3 .fruit3{color: pink;}
+h4 > .fruit4{color: lab(59.11% 63.58 69.7);}
+.font1{font-family: "標楷體";}
+.font2{font-family:"ChenYuluoyan";}
+.font3{ font-family: "Chiron GoRound TC"}
+.font4{font-family: "BBH Bartle", "標楷體"}
+.font5{font-style: normal;}
+.font6{font-style:italic;}
+.font7{font-style:oblique;}
+.font8{text-transform: capitalize;}
+.underline{text-decoration: underline;}
+.overline{text-decoration: overline;}
+.linethrough{text-decoration:line-through;}
+.wavy{text-decoration-style: wavy;}
+.linehight{line-height: 2em;}
+.textalign{text-align: center;}
+.justify{text-align: justify;}
+.box{
+    border: 1px dashed rgb(56, 10, 223);
+    line-height: 100px;
+    height: 100px;
+    text-align: center;
+}
+#theh1{color: red;}
+.box{color: red;}
+.box>p{color: green;}
+.box p{color: blue;}
+
+</style>

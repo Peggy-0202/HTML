@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{border: 2px solid salmon;display:flex;flex-direction: row;justify-content: space-around;width: 300px;height: 150px;align-items: center;}
+        .item{
+            width: 50px;
+            /* height: 50px; */
+            border: 1px solid skyblue;
+            background-color: lightblue;
+            font-size: 20px;
+            padding: 5px;
+        }
+        .flex{display:flex;}
+        .inline-flex{display:inline-flex;}
+
+        .row{flex-direction: row;}
+        .row-reverse{flex-direction: row-reverse;}
+        .column{flex-direction: column;}
+        .column-reverse{flex-direction: column-reverse;}
+
+        .flex-start{justify-content: flex-start;}
+        .center{justify-content: center;}
+        .flex-end{justify-content: flex-end;}
+        .space-around{justify-content: space-around;}
+        .space-between{justify-content: space-between;}
+
+        .nowrap{flex-wrap: nowrap;}
+        .wrap{flex-wrap: wrap;}
+        .wrap-reverse{flex-wrap: wrap-reverse}
+
+
+
+    </style>
+</head>
+<body>
+<div class="box flex">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+</div>
+<div class="box flex">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+</div>
+
+</body>
+</html>
